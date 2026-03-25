@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasser | Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Yasser Bagonte</h1>
+  <p>Grade 11 Student</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <img src="b0e18bcc-7ac0-4d42-898a-881b554ecb60.jpeg" alt="My Photo">
+  <p>Hi! I’m Yasser, and I enjoy spending my time doing things I love like basketball, gaming, and music. Playing basketball keeps me active and helps me improve my teamwork and discipline. Gaming is one of my favorite hobbies because it allows me to relax, have fun, and challenge my skills. I also love listening to music since it helps me stay calm, focused, and inspired in my daily life.</p>
+</section>
+
+<section id="hobbies" class="hobbies">
+  <h2>My Hobbies</h2>
+
+  <div class="card">
+    <img src="OIP.jpeg" alt="Basketball">
+    <h3>🏀 Basketball</h3>
+    <p>I love playing basketball because it keeps me active and healthy. It also teaches me teamwork, discipline, and how to stay focused during games.</p>
+  </div>
+
+  <div class="card">
+    <img src="gaming-on-a-monitor.jpg" alt="Gaming">
+    <h3>🎮 Gaming</h3>
+    <p>Gaming is one of my favorite hobbies because it helps me relax and enjoy my free time. I like exploring different games and improving my skills.</p>
+  </div>
+
+  <div class="card">
+    <img src="Shutterstock_13758557g.jpg" alt="Music">
+    <h3>🎵 Music</h3>
+    <p>I enjoy listening to music because it makes me feel calm and inspired. Music helps me focus and improves my mood every day.</p>
+  </div>
+
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <button onclick="showMessage()">Click Me</button>
+  <p id="message"></p>
+</section>
+
+<footer>
+  <p>Thanks for visit my page</p>
+</footer>
+
+<script>
+function showMessage() {
+  document.getElementById("message").innerText = "Thanks for visiting my website!";
+}
+</script>
+
+</body>
+</html>
+
+
+<style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: #444;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}</style>
